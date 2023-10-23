@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>jQuery Tutorials</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <ul class="navbar">
+      <li><a href="#" data-scroll="home">Home</a></li>
+      <li><a href="#" data-scroll="about-us">About Us</a></li>
+      <li><a href="#" data-scroll="services">Services</a></li>
+      <li><a href="#" data-scroll="solutions">Solutions</a></li>
+      <li><a href="#" data-scroll="products">Products</a></li>
+      <li><a href="#" data-scroll="contact-us">Contact Us</a></li>
+    </ul>
+    <div class="fixed-menu">
+      <i class="fa fa-gear"></i>
+      <h3>Change Colors</h3>
+      <ul class="change-colors">
+        <li data-color="blue"></li>
+        <li data-color="red"></li>
+        <li data-color="green"></li>
+        <li data-color="purple"></li>
+      </ul>
+      <h3>Important Links</h3>
+      Testing Links
+    </div>
+    <div id="home" class="block">
+      <h2 class="skin-color">Home</h2>
+      <div class="popups">
+        <span class="show-popup" data-popup=".first-popup">Show 1st Popup</span>
+        <span class="show-popup" data-popup=".second-popup">Show 2nd Popup</span>
+      </div>
+
+      <div class="popup first-popup">
+      <div class="inner">
+        <h2>This is Our 1st Popup</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti
+          inventore eius at vero eaque aliquam ab, impedit vitae! Exercitationem
+          laborum maiores eaque similique neque!
+        </p>
+        <button class="close">Close</button>
+      </div>
+    </div>
+    <div class="popup second-popup">
+      <div class="inner">
+        <h2>This is Our 2nd Popup</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti
+          inventore eius at vero eaque aliquam ab, impedit vitae! Exercitationem
+          laborum maiores eaque similique neque!
+        </p>
+        <button class="close">Close</button>
+      </div>
+    </div>
+
+    <div class="error-message">
+This is Error Message
+    </div>
+
+      <div class="buttons-effects">
+        <button class="buttons-effect from-left">
+          <span>From Left</span>
+        </button>
+        <button class="buttons-effect from-top">
+          <span>From Top</span>
+        </button>
+        <button class="buttons-effect border-left">
+          <span>Border From Left</span>
+        </button>
+        <button class="buttons-effect border-top">
+          <span>Border From Top</span>
+        </button>
+      </div>
+      <div class="buttons-effect">
+        <button class="buttons-effect bounce bounce-one">
+          Bounce Once
+        </button>
+        <button class="buttons-effect bounce bounce-two">
+          Bounce Twice
+        </button>
+      </div>
+      <div class="animated-progress progress-blue">
+        <span data-progress="45"></span>
+      </div>
+      <div class="animated-progress progress-red">
+        <span data-progress="25"></span>
+      </div>
+      <div class="animated-progress progress-green">
+        <span data-progress="75"></span>
+      </div>
+      <div class="animated-progress progress-purple">
+        <span data-progress="90"></span>
+      </div>
+      <div class="gallery">
+        <div class="master-img">
+          <i class="skin-background fa fa-chevron-left fa-lg"></i>
+          <i class="skin-background fa fa-chevron-right fa-lg"></i>
+          <img src="Image/Back.jpg" alt="" />
+        </div>
+        <div class="thumbnails">
+          <img class="selected" src="Image/client-8.png" alt="" />
+          <img src="Image/client-1.png" alt="" />
+          <img src="Image/client-2.png" alt="" />
+          <img src="Image/client-3.png" alt="" />
+          <img src="Image/client-4.png" alt="" />
+        </div>
+      </div>
+      <div class="products">
+        <div class="product">
+          <h3>Product One</h3>
+          <span class="date">25/4/2017</span>
+          <img src="http://placehold.it/100/100" alt="" />
+          <i class="fa fa-plus fa-lg"></i>
+          <p class="description">This is Test Description</p>
+        </div>
+        <div class="product">
+          <h3>Product Two</h3>
+          <span class="date">25/4/2017</span>
+          <img src="http://placehold.it/100/100" alt="" />
+          <i class="fa fa-plus fa-lg"></i>
+          <p class="description">This is Test Description</p>
+        </div>
+      </div>
+
+        <div class="items grid-view">
+          <div class="view-options">
+            <i class="active fa fa-list fa-fw fa-2x" data-class="list-view"></i>
+            <i class="fa fa-th-large fa-fw fa-2x" data-class="grid-view"></i>
+          </div>
+          <div class="item first">
+            <h3>Item One</h3>
+            <span class="date">25/4/2017</span>
+            <img src="http://placehold.it/100/DDD/000" alt="" />
+            <i class="fa fa-plus fa-lg"></i>
+            <p class="description">This is Test Description</p>
+          </div>
+          <div class="item">
+            <h3>Item Two</h3>
+            <span class="date">25/4/2017</span>
+            <img src="http://placehold.it/100/DDD/000" alt="" />
+            <i class="fa fa-plus fa-lg"></i>
+            <p class="description">This is Test Description</p>
+          </div>
+          </div>
+          <div class="our-form">
+            <form>
+              <div>
+                <input class="auto-direction" type="text" required="required" placeholder="Type Your Name">
+                <span class="the-message">Please Fill This Field</span>
+                <div class="unicode"></div>
+              </div>
+              <div>
+                <input class="auto-direction" type="email" required="required" placeholder="Type Your Email">
+                <span class="the-message">Please Fill This Field</span>
+              </div>
+              <div>
+                <input type="password" required="required" placeholder="Type Your Password">
+                <span class="the-message">Please Fill This Field</span>
+              </div>
+              <div>
+                <textarea class="auto-direction" required="required" placeholder="Type Your Message"></textarea>
+                <span class="the-message">Please Fill This Field</span>
+              </div>
+              <div>
+                <input class="add-tag" type="text" placeholder="Please Type Tags Then press [,]">
+                <div class="tags"></div>
+              </div>
+              <!-- <div class="custom-file">
+                <input type="file">
+              </div> -->
+              <input type="submit" value="Send">
+            </form>
+          </div>
+          <div class="trimmed-texts">
+            <p class="p-one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit molestias perferendis suscipit mollitia harum dolore ratione nulla, odio doloremque commodi?</p>
+            <p class="p-two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit molestias perferendis suscipit mollitia harum dolore ratione nulla, odio doloremque commodi?</p>
+          </div>
+          <div class="container same-height">
+            <div class="one">
+              This Is Div Number One This Is Div Number One This Is Div Number One This Is Div Number One
+            </div>
+            <div class="two">
+              This Is Div Number Two This Is Div Number Two This Is Div Number Two This Is Div Number Two This Is Div Number Two
+            </div>
+            <div class="three">
+              This Is Div Number Three This Is Div Number Three This Is Div Number Three This Is Div Number Three This Is Div Number Three This Is Div Number Three
+            </div>
+          </div>
+          <div class="container">
+            <div class="cards">
+              <div class="card card-one"></div>
+              <div class="card card-two"></div>
+              <div class="card card-three"></div>
+              <div class="card card-four"></div>
+              <div class="card card-five"></div>
+              <div class="card card-six"></div>
+              <div class="card card-seven"></div>
+              <div class="card card-eight"></div>
+            </div>
+          </div>
+          <div class="container">
+            <h3 class="blink-warning">This Is Warning</h3>
+          </div>
+          <div class="container">
+            <div class="todo-list">
+              <h3>To Do List</h3>
+              <ul class="tasks">
+                <li>Finishing Python Course</li>
+                <li>Learning The New CSS Lesson</li>
+                <li>Call My Friend Jesus</li>
+              </ul>
+              <form class="add-task" method="post">
+                <input class="task-input" type="text" name="task" placeholder="Add New Task">
+              </form>
+            </div>
+          </div>
+          <div class="container">
+            <p class="typer" data-text="lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet."></p>
+          </div>
+          <div class="container">
+            <table class="summary">
+              <tr>
+                <td>Name</td>
+                <td>Value</td>
+                <td>Price</td>
+              </tr>
+              <tr>
+                <td>Data One</td>
+                <td>10 Items</td>
+                <td class="price">100</td>
+              </tr>
+              <tr>
+                <td>Data Two</td>
+                <td>5 Items</td>
+                <td class="price">80</td>
+              </tr>
+              <tr>
+                <td>Data Three</td>
+                <td>1 Items</td>
+                <td class="price">20</td>
+              </tr>
+              <tr>
+                <td>Data Four</td>
+                <td>20 Items</td>
+                <td class="price">200</td>
+              </tr>
+              <tr>
+                <td>Data Five</td>
+                <td>2 Items</td>
+                <td class="price">28</td>
+              </tr>
+              <tr>
+                <td colspan="2">Total:</td>
+                <td class="the-total"></td>
+              </tr>
+            </table>
+          </div>
+          <div class="container">
+            <div class="text-ticker">
+              <h3>Today Notes</h3>
+              <ul class="ticker-list">
+                <li class="active">This Is Line Number One To Test</li>
+                <li>This Is Line Number Two To Test</li>
+                <li>This Is Line Number Three To Test</li>
+                <li>This Is Line Number Four To Test</li>
+                <li>This Is Line Number Five To Test</li>
+                <li>This Is Line Number Six To Test</li>
+              </ul>
+            </div>
+          </div>
+          <div class="container">
+            <span class="switch-tabs">Switch View</span>
+            <div class="dynamic-tabs left-tabs">
+              <ul class="tabs-list">
+                <li class="active" data-content=".content-one">One</li>
+                <li data-content=".content-two">Two</li>
+                <li data-content=".content-three">Three</li>
+                <li data-content=".content-four">Four</li>
+                <li data-content=".content-five">Five</li>
+              </ul>
+              <div class="content-list">
+                <div class="content-one">This Is Content Number One</div>
+                <div class="content-two">This Is Content Number Two</div>
+                <div class="content-three">This Is Content Number Three</div>
+                <div class="content-four">This Is Content Number Four</div>
+                <div class="content-five">This Is Content Number Five</div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <form>
+              <input class="email-suggest" type="email" name="email" autocomplete="off" placeholder="Type Your Email">
+              <!-- <ul class="suggest-box">
+                <li>@Gmail</li>
+                <li>@Yahoo</li>
+                <li>@Hotmail</li>
+                <li>@Outlook</li>
+              </ul> -->
+            </form>
+          </div>
+          <div id="about-us" class="block">
+            <h2>About Us</h2>
+          </div>
+          <div id="services" class="block">
+            <h2>Services</h2>
+          </div>
+          <div id="solutions" class="block">
+            <h2>Solutions</h2>
+          </div>
+          <div id="products" class="block">
+            <h2>Products</h2>
+          </div>
+          <div id="contact-us" class="block">
+            <h2>Contact Us</h2>
+          </div>
+          <a class="scroll-to-top" href="#">
+            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+          </a>
+          <script src="js/JQuery.js"></script>
+          <script src="js/main.js"></script>
+  </body>
+</html>
